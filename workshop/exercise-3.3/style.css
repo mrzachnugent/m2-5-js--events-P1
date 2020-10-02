@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #ececec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(143.08deg, #2ceffc -8.53%, #019df4 64.56%);
+}
+
+.sound-btn {
+  height: 500px;
+  width: 500px;
+  background: linear-gradient(143.08deg, #2ceffc -8.53%, #019df4 64.56%);
+  border-radius: 50%;
+  border: none;
+  color: #d6fcff;
+  font-size: 320px;
+  transform: rotate(7deg);
+  box-shadow: inset 4px 4px 8px rgba(255, 255, 255, 0.3),
+    4px 4px 8px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.308);
+  transition: all 0.1s ease-in-out;
+}
+
+.sound-btn:active {
+  box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.3),
+    inset 4px 4px 8px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  color: #d6fcffe5;
+  transform: scale(0.98) rotate(7deg);
+}
+
+.sound-btn:focus {
+  outline: none;
+}

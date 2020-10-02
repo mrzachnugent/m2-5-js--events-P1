@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #ececec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  height: 500px;
+  width: 700px;
+  background: linear-gradient(143.08deg, #2ceffc -8.53%, #019df4 64.56%);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-text {
+  font-size: 160px;
+  font-family: monospace;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.308);
+  padding-bottom: 25px;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 21px;
+  font-family: monospace;
+  font-weight: 600;
+  color: #fff;
+
+  box-shadow: inset 4px 4px 8px rgba(255, 255, 255, 0.3),
+    4px 4px 8px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.308);
+}
+
+.btn:focus {
+  outline: none;
+  transform: scale(0.98);
+}
+
+.btn-start {
+  margin-right: 20px;
+  background: linear-gradient(143.08deg, #2ceffc -8.53%, #019df4 64.56%);
+  cursor: pointer;
+}
+.btn-stop {
+  background: linear-gradient(143.08deg, #ff3b3b -8.53%, #b31515 64.56%);
+  opacity: 0.5;
+}

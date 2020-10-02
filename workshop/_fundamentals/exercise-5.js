@@ -7,7 +7,34 @@
 // - If the provided argument is not a known month, return 'error';
 
 const getDaysInMonth = (month) => {
-  // Insert missing solution please
+  switch (month) {
+    case "January":
+      return 31;
+    case "February":
+      return 28;
+    case "March":
+      return 31;
+    case "April":
+      return 30;
+    case "May":
+      return 31;
+    case "June":
+      return 30;
+    case "July":
+      return 31;
+    case "August":
+      return 31;
+    case "September":
+      return 30;
+    case "October":
+      return 31;
+    case "November":
+      return 30;
+    case "December":
+      return 31;
+    default:
+      return "error";
+  }
 };
 
 // 2. Do a console.log to verify your function.

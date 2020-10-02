@@ -4,7 +4,11 @@
 // e.g. letterCount(["crisp", "bacon"]) returns 10
 
 const letterCount = (arr) => {
-  // Insert missing solution please
+  let letterCount = 0;
+  arr.forEach((str) => {
+    letterCount += str.length;
+  });
+  return letterCount;
 };
 
 // 2. Do a console.log to verify your function.

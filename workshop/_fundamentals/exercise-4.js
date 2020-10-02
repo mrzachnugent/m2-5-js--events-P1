@@ -1,12 +1,18 @@
 // Exercise 4
 //
-// 1. Write a function that accepts an array of objects and a key (string) as arguments and returns a new array with only the values of the corresponding key.
+// 1. Write a function that accepts an array of objects and a key (string) as arguments
+//    and returns a  new array with only the values of the corresponding key.
+//
 // e.g. getValues([{name: 'chris', age: 23}, {name: 'liv', age: 36}, {name: 'dave', age: 43}, 'age']) returns [23, 36, 43]
 
 // - If the provided key is not any of the objects, return null for that value;
 
 const getValues = (arr, key) => {
-  // Insert missing solution please
+  let newArr = arr.map((obj) => {
+    return obj[key];
+  });
+
+  return newArr;
 };
 
 // 2. Do a console.log to verify your function.
